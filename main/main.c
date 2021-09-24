@@ -16,8 +16,6 @@ bool	is_only_white_spaces(char *line)
 
 int	main(int argc, char *argv[], char *envp[])
 {
-	extern int rl_catch_signals;
-	rl_catch_signals = 0;
 	int		error_check;
 	char	*prompt;
 
