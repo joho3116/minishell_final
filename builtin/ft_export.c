@@ -114,7 +114,7 @@ void	builtin_export_sub(int i, int j, bool *error_flag)
 		*error_flag = true;
 		print_error(NOT_A_VALID_IDENTIFIER, "minishell: export");
 	}
-	else if (find_key_and_return_value(buf) == NULL)
+	else if (find_key_and_return_node(buf) == NULL)
 	{
 		if (set_new_key(g_info.cmds[i][j]) < 0)
 			*error_flag = true;
