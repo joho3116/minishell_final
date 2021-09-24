@@ -4,7 +4,7 @@
 int	init_minishell_envp(char *envp[])
 {
 	int			i;
-	extern int rl_catch_signals;
+	extern int	rl_catch_signals;
 
 	rl_catch_signals = 0;
 	i = -1;
